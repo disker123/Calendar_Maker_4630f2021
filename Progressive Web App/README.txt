@@ -1,5 +1,3 @@
-Mobile App Project Update: 11/17/21
+Mobile App Project Update: 11/24/21
 
-Update: Created front end for a progressive web app. Takes in users class data and saves it in the javascript for outputting to table.
-
-Plan to make installable and cache data in the coming days
+Update: Created local storage to store class information inside the devices local storage and made webmanifest to allow for install
