@@ -1,3 +1,7 @@
-Mobile App Project Update: 11/24/21
+Mobile App Project Update: 12/01/21
 
-Update: Created local storage to store class information inside the devices local storage and made webmanifest to allow for install
+Update: Added service worker to allow for install and finished the scripting 
+to allow classes to display on the right classes on the right days while also
+parsing the academic calendar for monday schedule days and university closed
+days.
+

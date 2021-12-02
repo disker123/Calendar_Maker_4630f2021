@@ -2,64 +2,171 @@
 <html lang="en US">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#B12A34">
+        <link rel="apple-touch-icon" href="logos/rowdy.png">
+        <link rel="shortcut icon" href="#">
         <title>Calandar App</title>
         <!--Custon stylesheet-->
         <!--<link rel="stylesheet" href="css/style.css">-->
         <!--Bootstrap CDN-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <!--Web Manifest-->
-        <link rel="manifest" href="mad.webmanifest">
+        <link rel="manifest" href="manifest.json">
     </head>
     <body>
-        <form id="calandarForm" class="form-group col-sm-12" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h1 class="navbar-brand" href="#">Calandar Maker</h1>
+            <ul>
+            <li><a onclick="displayForm()">Add Class</a></li>
+            <li><a onclick="displayTable()">Schedule</a></li>
+            </ul>
+          </nav>
+
+        <center><form id="calandarForm" class="form-group col-sm-12" >
             <div>
                 <label for="className">Class Name</label><br/>
-                <input id="className" name="className" type="text" required>
+                <input class='form-control' id="className" name="className" type="text" required>
             </div>
             <div>
                 <label for="classType">Class Type</label><br/>
-                <select id="classType" name="classType" required>
+                <select class='form-control' id="classType" name="classType" required>
+                    <option>ACCT</option>
+                    <option>AERO</option>
+                    <option>AEST</option>
+                    <option>AMST</option>
+                    <option>ARHI</option>
+                    <option>ARTS</option>
+                    <option>ASAM</option>
+                    <option>ATMO</option>
+                    <option>BIOL</option>
+                    <option>BMBT</option>
+                    <option>BMEN</option>
+                    <option>BUSI</option>
+                    <option>CHEM</option>
+                    <option>CHEN</option>
+                    <option>CIVE</option>
                     <option>COMP</option>
+                    <option>CONT</option>
+                    <option>CRIM</option>
+                    <option>CRIM</option>
+                    <option>DGMD</option>
+                    <option>DPTH</option>
+                    <option>ECON</option>
+                    <option>EDUC</option>
                     <option>EECE</option>
+                    <option>ENGL</option>
+                    <option>ENGN</option>
+                    <option>ENGY</option>
+                    <option>ENTR</option>
+                    <option>ENVE</option>
+                    <option>ENVI</option>
+                    <option>ENVS</option>
+                    <option>ETEC</option>
+                    <option>EXER</option>
+                    <option>FAHS</option>
+                    <option>FINA</option>
+                    <option>GEOL</option>
+                    <option>GLST</option>
+                    <option>GNDR</option>
+                    <option>GRFX</option>
+                    <option>HIST</option>
+                    <option>HONR</option>
+                    <option>HSCI</option>
+                    <option>INFO</option>
+                    <option>LABR</option>
+                    <option>LGST</option>
+                    <option>LIFE</option>
+                    <option>MARI</option>
                     <option>MATH</option>
+                    <option>MECH</option>
+                    <option>MGMT</option>
+                    <option>MIST</option>
+                    <option>MKTG</option>
+                    <option>MLSC</option>
+                    <option>MSIT</option>
+                    <option>MTEC</option>
+                    <option>MUAP</option>
+                    <option>MUBU</option>
+                    <option>MUED</option>
+                    <option>MUEN</option>
+                    <option>MUHI</option>
+                    <option>MUPF</option>
+                    <option>MUSR</option>
+                    <option>MUTH</option>
+                    <option>NONC</option>
+                    <option>NURS</option>
+                    <option>NUTR</option>
+                    <option>PCST</option>
+                    <option>PHIL</option>
+                    <option>PHRM</option>
+                    <option>PHYS</option>
+                    <option>PLAS</option>
+                    <option>POLI</option>
+                    <option>POLY</option>
+                    <option>POMS</option>
+                    <option>PSMA</option>
+                    <option>PSYC</option>
+                    <option>PTEC</option>
+                    <option>PUBH</option>
+                    <option>PUBH</option>
+                    <option>PUBH</option>
+                    <option>RADI</option>
+                    <option>ROTC</option>
+                    <option>SCIE</option>
+                    <option>SOCI</option>
+                    <option>THEA</option>
+                    <option>UTCH</option>
+                    <option>WLAN</option>
+                    <option>WLAR</option>
+                    <option>WLCH</option>
+                    <option>WLFR</option>
+                    <option>WLGE</option>
+                    <option>WLIT</option>
+                    <option>WLKH</option>
+                    <option>WLLA</option>
+                    <option>WLPO</option>
+                    <option>WLSP</option>
                 </select>
             </div>
             <div>
                 <label for="classNumber">Class Number</label><br/>
-                <input id="classNumber" name="classNumber" type="number" required>
+                <input class='form-control' id="classNumber" name="classNumber" type="number" required>
             </div>
             <div>
                 <label for="sectionNumber">Section Number</label><br/>
-                <input id="sectionNumber" name="sectionNumber" type="number" required>
+                <input class='form-control' id="sectionNumber" name="sectionNumber" type="number" required>
             </div>
             <div>
                 <label for="startTime">Start Time</label><br/>
-                <input id="startTime" name="startTime" type="time" required>
-            </div>
+                <input class='form-control' id="startTime" name="startTime" type="time" required>
+            </div><br/>
             <div required>
-                <label for="classDays">Class Days</label><br/>
-                Monday
+                <label for="classDays">Class Days:</label><br/>
+                <label class="checkbox-inline">Monday</label>
                 <input id='classDaysMon' name='classDaysMon' type='checkbox' value='Mon' /><br/>
-                Tuesday
+                <label class="checkbox-inline">Tuesday</label>
                 <input id='classDaysTues' name='classDaysTues' type='checkbox' value='Tues' /><br/>
-                Wednesday
+                <label class="checkbox-inline">Wednesday</label>
                 <input id='classDaysWed' name='classDaysWed' type='checkbox' value='Wed' /><br/>
-                Thursday
+                <label class="checkbox-inline">Thursday</label>
                 <input id='classDaysThurs' name='classDaysThurs' type='checkbox' value='Thurs' /><br/>
-                Friday
+                <label class="checkbox-inline">Friday</label>
                 <input id='classDaysFri' name='classDaysFri' type='checkbox' value='Fri' /><br/>
-                Saturday
+                <label class="checkbox-inline">Saturday</label>
                 <input id='classDaysSat' name='classDaysSat' type='checkbox' value='Sat' /><br/>
             </div>
-            <br/><input type="submit">
-        </form>
-        <div id="Tab" class="overflow-auto col-sm-12"></div>
+            <br/><input class='form-control col-sm-4' type="submit">
+        </form></center>
+        <div id="Tab" class="table table-responsive table-hover container overflow-auto col-sm-12"></div>
+        <div id="txt"></div>
 
         <!--JQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
         <!--Validator-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+        <script src="scripts/index.js"></script>
         <script src="scripts/script.js"></script>
     </body>
 </html>
