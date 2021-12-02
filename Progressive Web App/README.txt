@@ -5,3 +5,4 @@ to allow classes to display on the right classes on the right days while also
 parsing the academic calendar for monday schedule days and university closed
 days.
 
+Used: https://youtu.be/WbbAPfDVqfY for setting up the service worker
