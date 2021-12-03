@@ -1,0 +1,4 @@
+1.) visit https://john-simonson.github.io/test/ to install PWA
+2.) Add classes via the form on the page
+3.) View Classes in the Schedule View
+4.) Change day you are focused on via the navigation buttons in the Schedule View

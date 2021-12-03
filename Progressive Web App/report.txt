@@ -1,0 +1,13 @@
+Chose to make a PWA that parses the table for the Umass Lowell 
+academic calendar and automaticallyparses it for monday class 
+schedule days and days off.
+
+Built as a PWA for device compatibility and lightweight install.
+Chose to parse the calendar from the website rather than manually
+entering the data by hand. This requires internet on first launch
+but makes updating the app easier.
+
+Used the local storage on the user's device rather than a database.
+
+Could have been built as a native app but chose to make a PWA for
+compatibility reasons and familiarity with the languages used.
